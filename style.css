@@ -529,9 +529,7 @@ body {
 /*  Services Section  */
 .services-section {
   position: relative;
-
 }
-
 
 .services-section .services-section-main-title {
   text-align: center;
@@ -581,10 +579,14 @@ body {
   flex-wrap: wrap;
   border-radius: 20%;
   padding-top: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .services-section-liste .services-section-liste-item {
-  width: 400px;
+  width: 320px;
   height: 250px;
   color: #fff;
   margin: 20px;
@@ -1268,7 +1270,6 @@ small.justify-content-center {
     font-size: 30px;
   }
 
- 
   .swiper-slide {
     color: #000;
     border-radius: 15px;
@@ -1292,9 +1293,7 @@ small.justify-content-center {
     padding-right: 5px;
     padding-left: 5px;
   }
- 
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -1316,7 +1315,6 @@ small.justify-content-center {
     font-size: 30px;
   }
 
-  
   .swiper-slide {
     min-width: 300px;
     height: 415px;
@@ -1338,7 +1336,6 @@ small.justify-content-center {
     padding-right: 5px;
     padding-left: 5px;
   }
- 
 }
 
 /* ./Our Blog */
