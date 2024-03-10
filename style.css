@@ -256,25 +256,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+.category-item {
+  position: relative;
+  margin-bottom: 30px;
+  margin: 7px;
+}
+
 .category-items .category-item img {
-  width: 260px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   margin-bottom: 25px;
 }
 
-.category-item {
-  position: relative;
-  margin-bottom: 20px;
-  margin: 7px;
-}
 .category-item-title {
+  margin-top: 15px;
   font-size: 17px;
 }
 
@@ -282,6 +283,7 @@ body {
   color: hsl(0, 2%, 45%);
   font-weight: 500;
   font-size: 20px;
+  margin-top: 15px;
 }
 
 .category-item i {
@@ -308,9 +310,35 @@ body {
   opacity: 1;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
   .category-items {
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .category-items .category-item {
+    width: 500px;
+    height: 400px;
+  }
+  .category-items .category-item img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 25px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .category-items .category-item {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 25px;
+  }
+  .category-items .category-item img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 25px;
   }
 }
 
@@ -318,11 +346,10 @@ body {
 
 /* discount */
 .discount {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .discount-description {
-  margin: 50px;
   border: 1px solid var(--maincolor);
   padding: 15px;
   position: relative;
@@ -340,12 +367,14 @@ body {
   top: 30px;
   font-size: 50px;
   color: var(--maincolor);
+  margin-bottom: 30px;
 }
 
 .discount-description .top + p {
   line-height: 1.7;
   margin-bottom: 30px;
 }
+
 .discount-description .polites {
   position: absolute;
   bottom: 5px;
@@ -404,6 +433,8 @@ body {
 .discount-item .discount-item-info h3 {
   font-size: 20px;
   color: rgb(158, 129, 129);
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 .discount .discount-item:nth-child(2) {
   margin: 0 20px;
@@ -413,11 +444,28 @@ body {
   background-size: cover;
 }
 
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
-  .discount-item {
-    width: 300%;
-  }
+.discount-section {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+}
+
 
 @media only screen and (min-width: 768px) {
   .discount {
@@ -427,48 +475,6 @@ body {
 }
 
 /* ./discount */
-
-/*cars-brands   */
-.swiper {
-  width: 100%;
-  height: 200px;
-}
-
-.swiper-slide {
-  text-align: center;
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  gap: 30px;
-  object-fit: cover;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 500px;
-  height: 150px;
-  object-fit: contain;
-}
-
-@media only screen and (max-width: 500px) {
-  .swiper-slide img {
-    display: block;
-    height: 100%;
-  }
-}
-
-.swiper-slide {
-  width: 100%;
-}
-
-.swiper-slide:nth-child(2n) {
-  width: 100%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 100%;
-}
-/* ./cars-brands */
 
 /* Cars review */
 .products-items {
@@ -528,7 +534,7 @@ body {
 
 /*  Services Section  */
 .services-section {
-  position: relative;
+  margin-top: 100px;
 }
 
 .services-section .services-section-main-title {
@@ -542,12 +548,12 @@ body {
   color: #fff;
   padding: 0;
   margin: 0;
+  font-size: 2;
 }
 
 .services-section .image-container {
   position: relative;
-  margin-top: 50px;
-  padding-top: 100px;
+  margin-top: 60px;
 }
 
 @keyframes moveUpDown {
@@ -563,22 +569,13 @@ body {
 .services-section .image-container img {
   animation: moveUpDown 2s ease-in-out infinite;
   margin: auto;
-  padding-top: 250px;
-}
-
-.services-section {
-  margin-top: 100px;
 }
 
 .services-section .services-section-liste {
-  position: absolute;
-  top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-radius: 20%;
-  padding-top: 100px;
   margin-right: 50px;
   margin-left: 50px;
   padding-right: 50px;
@@ -586,7 +583,7 @@ body {
 }
 
 .services-section-liste .services-section-liste-item {
-  width: 320px;
+  width: 290px;
   height: 250px;
   color: #fff;
   margin: 20px;
@@ -595,7 +592,7 @@ body {
 }
 
 .services-section-liste .services-section-liste-item h3 {
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 15px;
 }
 .services-section-liste .services-section-liste-item p {
@@ -615,22 +612,24 @@ body {
   width: 250px;
   height: 50px;
   border-radius: 20px;
-  background-color: red;
+
   margin-top: 30px;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .services-section {
-    margin-bottom: 1750px;
   }
 
   .services-section .services-section-sub-title {
-    padding-bottom: 15px;
-  }
-
-  .services-section .services-section-sub-title {
+    padding: 10px;
     font-size: 25px;
+  }
+
+  .services-section .services-section-main-title {
+    text-align: center;
+    color: red;
+    padding-bottom: 20px;
   }
 
   .services-section .image-container img {
@@ -638,13 +637,17 @@ body {
   }
 
   .services-section .services-section-liste {
-    width: 100%;
+    padding-bottom: 30px;
+    margin: auto;
   }
 
   .services-section-liste .services-section-liste-item {
-    width: 100%;
-
-    margin-bottom: 100px;
+    min-width: 100%;
+    min-height: 300px;
+    color: #fff;
+    margin: 20px;
+    border-radius: 50%;
+    padding-top: 50px;
   }
   .services-section-liste .services-section-liste-item img {
     width: 100px;
@@ -654,11 +657,11 @@ body {
     padding-bottom: 20px;
   }
   .services-section-liste .services-section-liste-item h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 15px;
   }
   .services-section-liste .services-section-liste-item p {
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 15px;
     padding-right: 5px;
   }
@@ -675,7 +678,6 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .services-section {
-    margin-bottom: 1000px;
   }
 
   .services-section .services-section-main-title {
@@ -714,7 +716,6 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .services-section {
-    margin-bottom: 1000px;
   }
 
   .services-section .services-section-main-title {
